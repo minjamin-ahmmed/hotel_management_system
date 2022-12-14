@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>
+    {% block title %}
+    {% endblock %}
+  </title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="http://127.0.0.1:8000">Home</a></li>
+  <li><a href="http://127.0.0.1:8000/about">About</a></li>
+  <li><a href="http://127.0.0.1:8000/contacts">Contacts</a></li>
+  <li><a href="http://127.0.0.1:8000/gallery">Gallery</a></li>
+   <li><a href="http://127.0.0.1:8000/meetingandevents">Meeting and Events</a></li>
+   <li><a href="http://127.0.0.1:8000/recreation">Recreation</a></li>
+   <li><a href="http://127.0.0.1:8000/restaurant">Restaurant</a></li>
+   <li><a href="http://127.0.0.1:8000/accomodation">Accomodation</a></li>
+    <li><a href="http://127.0.0.1:8000/view">View</a></li>
+    <li><a href="http://127.0.0.1:8000/change_password">Change Password</a></li>
+
+    <li>
+             <a href="http://127.0.0.1:8000/login" class="text-black">Login</a>
+            </li>
+            <li>
+             <a href="{% url 'customerregistration'%}" class="text-black">Registration</a>
+            </li>
+
+
+</ul>
+{% block content %}
+    {% endblock %}
+
+
+<!-- Start Footer -->
+    <footer class="container bg-dark text-center p-2 mt-5">
+        <small class="text-white">Copyright &copy; 2022 || Designed By UAP || </small>
+        <small class="text-white">MINJAMIN AHMMED & RIAZUL HASAN </small>
+    </footer> <!-- End Footer -->
+
+
+</body>
+
+
+</html>

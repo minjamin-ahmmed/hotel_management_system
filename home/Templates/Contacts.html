@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Hotel Indigo | Contact Us
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <header>
+        <div class="header-section">
+            <h1 class="head-text1">Contact Us</h1>
+
+        </div>
+    </header>
+    <div class="text">
+        <p>Address: 351/3A, Gulshan-2,Dhaka, Dhaka Division, Bangladesh</p>
+        <p>Phone: 01701036898; Email: hotelindigo@admin.com</p>
+    </div>
+    <style>
+        header{
+            background-image: url('static/image/img1.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 70vh;
+        }
+
+        .header-section{
+            color: white;
+            background: rgba(0, 0, 0, 0.2);
+            height: 70vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head-text1{
+            font-size: 3rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .p-text1{
+            font-size: 2.2rem;
+            margin-bottom: 0.7rem;
+
+            color: red;
+        }
+        .text{
+            margin: 50px 30px;
+            font-weight: bolder;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    </style>
+
+{% endblock %}

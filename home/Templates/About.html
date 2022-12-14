@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Hotel Indigo | About Us
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <header>
+        <div class="header-section">
+            <h1 class="head-text1">About Us</h1>
+
+        </div>
+    </header>
+    <div class="text">
+        Hotel Indigo is a privately owned 5 Star Standard Luxury Hotel in Dhaka, Bangladesh. It is situated in an attractive location of Gulshan which is only 20 minutes drive form the Shahjalal International Airport. It is a place of choice of most of the corporate executives, foreigners, newly married couples, and for those who prefer to stay in luxury.
+
+    </div>
+    <style>
+        header{
+            background-image: url('/static/image/img1.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 70vh;
+        }
+
+        .header-section{
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            height: 70vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head-text1{
+            font-size: 3rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .p-text1{
+            font-size: 2rem;
+            margin-bottom: 0.7rem;
+            width: 45rem;
+            color: red;
+        }
+        .text{
+            margin: 50px 30px;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    </style>
+
+{% endblock %}

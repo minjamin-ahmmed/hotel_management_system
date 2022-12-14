@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Hotel Indigo | Meeting and Events
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <header>
+        <div class="header-section">
+            <h1 class="head-text1">Meeting & Events</h1>
+
+        </div>
+    </header>
+    <div class="text">
+        We have two modern Andromedas one at Roof Top Hall Of Star accommodates up to 900 pax for Theme parties, meetings, events and conference or workshop and 400pax for Lunch/dinner party depending on the function. Another Ball room (at basement) can cater up to 250pax for Lunch & Dinner. The unique setup & excellent surrounded service will design any event memorable. Two other exclusive meeting rooms for board meeting which can accommodate 30 pax & 16 pax onwards to meet the different purpose.
+
+RATE FOR HALL OF STAR
+
+
+    </div>
+    <style>
+        header{
+            background-image: url('/static/image/img1.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 70vh;
+        }
+
+        .header-section{
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            height: 70vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head-text1{
+            font-size: 3rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .p-text1{
+            font-size: 2rem;
+            margin-bottom: 0.7rem;
+            width: 45rem;
+            color: red;
+        }
+        .text{
+            margin: 50px 30px;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    </style>
+
+{% endblock %}
